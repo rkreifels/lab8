@@ -1,8 +1,11 @@
 Question 1:  Review the Dockerfile in your repo at docker/Dockerfile and related files in the docker directory.  In particular, review the plugins we have installed into this image.  What plugins / applications do you recognize?  Which ones do you think would be most useful when setting up a CI/CD pipeline?
-Answer:  
+
+Answer:  Groovy hook scripts allow actions to take place in reaction to key events.  Apache Maven is a build automation tool used to build and manage projects written in many different languages.
 
 Question 2:  What do you think are some advantages of running a dockerized Jenkins?  How would it differ to install Jenkins directly on a host?
-Answer:
+
+Answer: Using Docker would allow you to set up a Jenkins image that would be easy to launch and destroy as you develop your Groovy scripts. Docker would also allow you to use images for Jenkins agents.  This takes advantage of their ephemeral nature and results in a cleaner, easier Jenkins setup and better resource utilization.  Using docker reduces the number of static Jenkins VMs.  Installing these on a host directly would require more time and would not be ephemeral.
 
 Question 3:  Based on the behavior you have seen exploring Jenkins' administrative console and your experience setting up Jenkins on your VM, what are two ways to add a plugin to your Jenkins instance?
-Answer:  
+
+Answer:  Using a Dockerfile or Logging into Jenkins and going to Manage Jenkins > Manage Plugins.
